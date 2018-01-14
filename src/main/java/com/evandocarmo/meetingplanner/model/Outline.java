@@ -25,7 +25,7 @@ public class Outline implements Serializable {
   @NotBlank
   private String title;
 
-  @NotBlank
+  @NotNull
   private Integer outlineNumber;
 
   @Temporal(TemporalType.TIMESTAMP)
