@@ -42,4 +42,20 @@ public class Outline implements Serializable {
   @Temporal(TemporalType.TIMESTAMP)
   @LastModifiedDate
   private Date updatedAt;
+  
+  public String getTitle(){
+	  return this.title;
+  }
+  
+  public void setTitle(String title) {
+	  this.title = title;
+  }
+  public Integer getOutlineNumber(){
+	  return this.outlineNumber;
+  }
+  
+  public void setOutlineNumber(Integer number) {
+	  this.outlineNumber = number;
+  }
+  
 }

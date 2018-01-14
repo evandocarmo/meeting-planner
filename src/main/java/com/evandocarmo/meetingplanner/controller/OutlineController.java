@@ -5,8 +5,6 @@ import com.evandocarmo.meetingplanner.repository.OutlineRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -15,7 +13,6 @@ import java.util.List;
 @RequestMapping("/api")
 
 public class OutlineController {
-	private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     OutlineRepository outlineRepository;
@@ -29,7 +26,6 @@ public class OutlineController {
     // Create a new outlines
     @PostMapping("/outlines")
     public Outline createOutline(@Valid @RequestBody Outline outline) {
-    		log.info(outline.toString());
         return outlineRepository.save(outline);
     }
 
