@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 
-@RequestMapping("/outlines")
+@RequestMapping("/")
 
-public class TestController {
+public class MainController {
 	@RequestMapping(method = RequestMethod.GET)
-    public String outlineList(){
-    		return "outlinelist";
+    public String index(){
+    		return "index";
     }
 }
