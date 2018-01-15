@@ -6,7 +6,7 @@
 	<groupId>com.evandocarmo</groupId>
 	<artifactId>meeting-planner</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
 	<name>meeting-planner</name>
 	<description>Meeting Planner for Congregations</description>
