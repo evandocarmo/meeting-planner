@@ -18,8 +18,7 @@ public class OutlineController {
     OutlineRepository outlineRepository;
     
     @GetMapping("/outlines")
-    public String outlineList(Model model){
-    		model.addAttribute("outlinelist", outlineRepository.findAll());
+    public String outlineList(){
     		return "outlinelist";
     }
 
