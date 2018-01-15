@@ -12,8 +12,10 @@ import java.util.List;
 
 @Controller
 
+@RequestMapping("/outlines")
+
 public class TestController {
-	@GetMapping("/outlines")
+	@GetMapping("/")
     public String outlineList(){
     		return "outlinelist";
     }
